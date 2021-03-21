@@ -1,9 +1,3 @@
-<?php
-    session_start();
-    $_SESSION["index"]=$index;
-
-?>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
