@@ -1,9 +1,13 @@
 <?php
+<<<<<<< HEAD
 session_start();
 // include('serverl.php');   
 if ($_SESSION['success'] === True) {
     header('location: home.php');
 }
+=======
+session_start();   
+>>>>>>> 2066b13bb4a40ce536c3f2b9b02beabe93a14298
 ?> 
 
 <!DOCTYPE html>
@@ -19,6 +23,7 @@ if ($_SESSION['success'] === True) {
 </head>
 <body>
     <section class="login-dark">
+<<<<<<< HEAD
             <form action="serverl.php" method="post" >
                 <?php include('errors.php'); ?>
                 <h2 class="visually-hidden">Connexion</h2>
@@ -29,6 +34,15 @@ if ($_SESSION['success'] === True) {
                 <div class="mb-3"><button class="btn btn-primary d-block w-100" onclick="location.href = 'register.php'";>Enregistrement</button>
 
                 <a class="forgot" href="#">Vous avez oublier vos identifiants?</a>
+=======
+            <form method="post">
+                <h2 class="visually-hidden">Connexion</h2>
+                <div class="illustration"><i class="icon ion-ios-locked-outline"></i></div>
+                <div class="mb-3"><input class="form-control" type="email" name="email" placeholder="Email"></div>
+                <div class="mb-3"><input class="form-control" type="password" name="password" placeholder="Password"></div>
+                <div class="mb-3"><button class="btn btn-primary d-block w-100" type="submit">Connexion</button></div><a class="forgot" href="#">Vous avez oublier vos identifiants?</a>
+                <div class="mb-3"><button class="btn btn-primary d-block w-50" type="submit">Enregistrement</button>
+>>>>>>> 2066b13bb4a40ce536c3f2b9b02beabe93a14298
             </form>
         </section>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
