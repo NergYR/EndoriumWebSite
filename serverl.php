@@ -30,6 +30,8 @@ if($count1 == 1){
     $hash = $row['password'];
     //echo $result2; //Testing to see if am getting the hashed password. 
     if(password_verify($password, $hash )){
+        $seconds = 120 + time();
+        setcookie(loggedIn, date("F js - g:i a"), $seconds);
         $_SESSION["username"] = $username;
         header("location:home.php");
     }
