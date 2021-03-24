@@ -26,6 +26,7 @@ if ($_SESSION['success'] === True) {
                 <div class="mb-3"><input class="form-control" type="username" name="username" placeholder="Username"></div>
                 <div class="mb-3"><input class="form-control" type="password" name="password" placeholder="Password"></div>
                 <div class="mb-3"><button class="btn btn-primary d-block w-100" type="submit">Connexion</button></div>
+                <a class="mb-3" href="discord.php">Login Using Discord</a>
                 <div class="mb-3"><button class="btn btn-primary d-block w-100" onclick="location.href = 'register.php'";>Enregistrement</button>
 
                 <a class="forgot" href="#">Vous avez oublier vos identifiants?</a>
